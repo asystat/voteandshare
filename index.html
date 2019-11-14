@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Workshop &mdash; Colorlib Website Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Remember to include jQuery :) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+  <!--Js- Socials-->
+  <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-classic.css" />
+  <link rel="stylesheet" href="css/sb.css">
+
+</head>
+<body>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="site-navbar py-3" role="banner">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0">
+              <a href="index.html" class="text-white h2 mb-0">Gobierno
+                <span class="text-primary">Escucha</span>
+              </a>
+            </h1>
+          </div>
+          <!--<div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li class="active">
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="speakers.html">Speakers</a>
+                </li>
+                <li>
+                  <a href="news.html">News</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contacts</a>
+                </li>
+                <li class="cta">
+                  <a href="buy-tickets.html">Buy Tickets</a>
+                </li>
+              </ul>
+            </nav>
+          </div>-->
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;">
+            <a href="#" class="site-menu-toggle js-menu-toggle text-white">
+              <span class="icon-menu h3"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+  </div>
+  </header>
+
+  <div class="site-section site-hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-10">
+          <span class="d-block mb-3 caption" data-aos="fade-up" data-aos-delay="100">Chile despertó</span>
+          <h1 class="d-block mb-4" data-aos="fade-up" data-aos-delay="200">Haz que el gobierno se entere</h1>
+          <span class="d-block mb-5 caption" data-aos="fade-up" data-aos-delay="300">#gobiernoescucha</span>
+          <a href="#seccionaporte" class="btn-custom" data-aos="fade-up" data-aos-delay="400">
+            <span>Ingresa tu demanda</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Seccion top aportes-->
+
+  <div class="site-section" id="ge">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-4" data-aos="fade-up">
+          <div class="site-section-heading">
+            <h2>El pueblo dice</h2>
+          </div>
+        </div>
+        <!--<div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus eligendi.
+            Nesciunt repellendus ab voluptatibus.</p>
+        </div>-->
+        <input type="button" value="Más votados" class="btn btn-primary py-2 px-4 text-white">&nbsp;
+        <input type="button" value="Nuevos" class="btn btn-primary py-2 px-4 text-white btn-selection">&nbsp;
+
+        <input type="button" value="Más polémicos" class="btn btn-primary py-2 px-4 text-white btn-selection">
+
+      </div>
+
+      <div class="row align-items-stretch program">
+
+      <prop-item
+        v-for="i in proplist"
+        v-bind:item="i"
+        v-bind:key="i.id"
+      ></prop-item>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!--Fin seccion aportes-->
+
+
+
+  <!-- Seccion demanda o propuesta -->
+
+  <div class="site-section" id="seccionaporte">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6" data-aos="fade-up">
+
+          <div class="bio pl-lg-5" style="padding-left: 0 !important;">
+            <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+              <span class="emphasis">Demanda es</span> una petición concreta para generar un cambio positivo</p>
+
+          </div>
+
+          <form action="#">
+
+            <!--
+          <div class="row form-group">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <label class="" for="fname">First Name</label>
+              <input type="text" id="fname" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label class="" for="lname">Last Name</label>
+              <input type="text" id="lname" class="form-control">
+            </div>
+          </div>
+
+          <div class="row form-group">
+            
+            <div class="col-md-12">
+              <label class="" for="email">Email</label> 
+              <input type="email" id="email" class="form-control">
+            </div>
+          </div>
+
+          <div class="row form-group">
+            
+            <div class="col-md-12">
+              <label class="" for="subject">Subject</label> 
+              <input type="subject" id="subject" class="form-control">
+            </div>
+          </div>
+        -->
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="" for="message">Demando que:</label>
+                <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Escribe tu demanda aquí en 120 caracteres"></textarea>
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <div class="col-md-12">
+                <input type="submit" value="Enviar" class="btn btn-primary py-2 px-4 text-white">
+              </div>
+            </div>
+
+
+          </form>
+        </div>
+        <!--
+        <div class="col-md-6" data-aos="fade-up">
+
+          <div class="bio pl-lg-5" style="padding-left: 0 !important;">
+            <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
+              <span class="emphasis">Propuesta es</span> un conjunto de ideas para ejecutar una mejora</p>
+
+          </div>
+
+          <form action="#">
+
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="" for="message">Propongo que:</label>
+                <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="escribe tu propuesta aquí en 120 caracteres"></textarea>
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <div class="col-md-12">
+                *-<input type="submit" value="Enviar" class="btn btn-primary py-2 px-4 text-white">
+              </div>
+            </div>
+
+
+          </form>
+        </div>
+        -->
+      </div>
+    </div>
+  </div>
+
+  <!-- fin seccion demanda propuesta-->
+
+  <div id="mymodal" style="display:none;" class="modal fade" role="dialog">
+      <div class="modal-dialog centrado">
+          <span class="d-block mb-3 caption aos-init aos-animate" data-aos="fade-up">Para que tu actividad sea contabilizada, debes validar tu correo</span>
+          <p><input type="email" id="email" placeholder="escribe tu email aqui" class="form-control"></p>
+          <input type="button" value="verificar" class="btn btn-primary py-2 px-4 text-white">
+      </div>
+    </div>
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-4">
+          <h2 class="footer-heading text-uppercase mb-4">ElPuebloDice</h2>
+          <p>Un sitio para democratizar las demandas populares</p>
+        </div>
+        <div class="col-md-3 ml-auto">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#">-> Ver demandas</a>
+            </li>
+            <li>
+              <a href="#">-> Exige tus derechos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--
+        <div class="col-md-4">
+          <h2 class="footer-heading text-uppercase mb-4">Connect with Us</h2>
+          <p>
+            <a href="#" class="p-2 pl-0">
+              <span class="icon-facebook"></span>
+            </a>
+            <a href="#" class="p-2">
+              <span class="icon-twitter"></span>
+            </a>
+            <a href="#" class="p-2">
+              <span class="icon-youtube"></span>
+            </a>
+            <a href="#" class="p-2">
+              <span class="icon-instagram"></span>
+            </a>
+          </p>
+        </div>
+      </div>
+      -->
+      <div class="row">
+
+        <div class="col-md-12">
+          <div class="border-top pt-5">
+            <p>
+              <a href="https://www.leychile.cl/Navegar?idNorma=242302" target="_blank">-> Constitución de Chile</a>
+              <br/>
+              <a href="https://en.wikipedia.org/wiki/Chile" target="_blank">-> Chile en Wikipedia</a>
+              <br/>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!--Production Vue:
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+-->
+  <script src="js/scripts.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+  <script>
+    $(".share").jsSocials({
+        shares: ["twitter", "facebook", "linkedin", "pinterest", "whatsapp"]
+      });
+
+
+  </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

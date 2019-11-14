@@ -1,0 +1,75 @@
+.emphasis{
+    box-sizing:border-box;
+    color:rgb(255, 87, 51);
+    display:inline;
+    font-family:"Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size:16px;
+    font-weight:300;
+    height:auto;
+    line-height:27.2px;
+    margin-bottom:16px;
+    opacity:1;
+    text-align:left;
+    text-size-adjust:100%;
+    text-transform:uppercase;
+    transform:matrix(1, 0, 0, 1, 0, 0);
+    transition-delay:0.3s;
+    transition-duration:0.8s;
+    transition-property:opacity, transform;
+    width:auto;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+.btn-selection{
+    background-color: rgb(63, 64, 70);
+    border-color: rgb(73, 74, 80);
+}
+
+.positivo{
+    color: darkgreen;
+}
+
+.negativo{
+    color: darkred;
+}
+
+.votos{
+
+}
+
+.votosi{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.votono{
+    background-color: #f44336;; /* RED */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.aporte{
+    font-size: 3.0rem !important;
+}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -200px;
+    width: 400px;
+    height: 100%;
+    text-align: center;
+}
